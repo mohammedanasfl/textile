@@ -1,0 +1,265 @@
+@page
+@model ContactUsModel
+@{
+    ViewData["Title"] = "Contact Us - Abinaya Garment Shop";
+}
+
+<!-- Hero Section -->
+<section class="hero" style="min-height: 400px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center hero-content">
+                <h1>Get in Touch</h1>
+                <p class="subtitle">We're here to help with your wholesale and bulk order requirements</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information & Form -->
+<section class="container mt-5">
+    <div class="row">
+        <!-- Contact Information -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+            <div style="background-color: var(--light-accent); padding: 2rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                <h4 style="color: var(--primary-color); margin-bottom: 1.5rem;">Abinaya Garment Shop</h4>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                        Address
+                    </h6>
+                    <p style="color: var(--secondary-color); margin: 0; line-height: 1.6;">
+                        8/76, Angeripalayam Road,<br>
+                        Tiruppur, Tamil Nadu,<br>
+                        India
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                        Phone
+                    </h6>
+                    <p style="color: var(--secondary-color); margin: 0;">
+                        <a href="tel:+91-9876543210">+91-9876543210</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fab fa-whatsapp" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                        WhatsApp
+                    </h6>
+                    <p style="color: var(--secondary-color); margin: 0;">
+                        <a href="https://wa.me/919876543210?text=Hello%20Abinaya%20Garment%20Shop%2C%20I%20am%20interested%20in%20your%20cotton%20apparel%20wholesale%20collections.%20Please%20share%20your%20product%20details%20and%20wholesale%20pricing." target="_blank">Click to message on WhatsApp</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-envelope" style="color: var(--accent-color); margin-right: 0.5rem;"></i>
+                        Email
+                    </h6>
+                    <p style="color: var(--secondary-color); margin: 0;">
+                        <a href="mailto:contact@abinayagarments.com">contact@abinayagarments.com</a>
+                    </p>
+                </div>
+
+                <a href="https://maps.google.com/?q=8/76+Angeripalayam+Road,+Tiruppur,+Tamil+Nadu" target="_blank" class="btn btn-secondary w-100">
+                    <i class="fas fa-directions"></i> View on Google Maps
+                </a>
+            </div>
+
+            <!-- Quick Contact -->
+            <div style="background-color: var(--primary-color); color: var(--white); padding: 2rem; border-radius: 0.5rem; text-align: center;">
+                <h5 style="margin-bottom: 1rem;">Quick Contact</h5>
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">
+                    Have a quick question? Reach out to us directly via WhatsApp for instant support.
+                </p>
+                <a href="https://wa.me/919876543210?text=Hello%20Abinaya%20Garment%20Shop%2C%20I%20have%20a%20quick%20question%20about%20your%20products." target="_blank" class="btn btn-whatsapp w-100">
+                    <i class="fab fa-whatsapp"></i> Start WhatsApp Chat
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+            <div style="background-color: var(--light-accent); padding: 2rem; border-radius: 0.5rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Send Us an Inquiry</h3>
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="customerName" class="form-label">Customer Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="customerName" name="CustomerName" placeholder="Your name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="companyName" class="form-label">Company / Shop Name <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="companyName" name="CompanyName" placeholder="Your company name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number <span style="color: red;">*</span></label>
+                            <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" placeholder="Your phone number" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="emailAddress" class="form-label">Email Address <span style="color: red;">*</span></label>
+                            <input type="email" class="form-control" id="emailAddress" name="EmailAddress" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="city" class="form-label">City <span style="color: red;">*</span></label>
+                            <input type="text" class="form-control" id="city" name="City" placeholder="Your city" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="productInterested" class="form-label">Product Interested In <span style="color: red;">*</span></label>
+                            <select class="form-select" id="productInterested" name="ProductInterestedIn" required>
+                                <option value="">-- Select a product --</option>
+                                <option value="Men's Cotton T-Shirts">Men's Cotton T-Shirts</option>
+                                <option value="Women's Cotton T-Shirts">Women's Cotton T-Shirts</option>
+                                <option value="Kids Cotton Wear">Kids Cotton Wear</option>
+                                <option value="Polo T-Shirts">Polo T-Shirts</option>
+                                <option value="Oversized T-Shirts">Oversized T-Shirts</option>
+                                <option value="Cotton Shirts">Cotton Shirts</option>
+                                <option value="Hoodies">Hoodies</option>
+                                <option value="Sweatshirts">Sweatshirts</option>
+                                <option value="Track Pants">Track Pants</option>
+                                <option value="Casual Wear">Casual Wear</option>
+                                <option value="Custom Printed Apparel">Custom Printed Apparel</option>
+                                <option value="Multiple Products">Multiple Products</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="requiredQuantity" class="form-label">Required Quantity <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="requiredQuantity" name="RequiredQuantity" placeholder="e.g., 500 pieces, 1000+ units" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message <span style="color: red;">*</span></label>
+                        <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Please tell us more about your requirements..." required></textarea>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                        <label class="form-check-label" for="agreeTerms">
+                            I agree to be contacted regarding my inquiry
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                        <i class="fas fa-paper-plane"></i> Send Inquiry
+                    </button>
+                </form>
+
+                @if (Model.SubmitMessage != null)
+                {
+                    <div class="alert @(Model.IsSuccess ? "alert-success" : "alert-danger") mt-3" role="alert">
+                        @Model.SubmitMessage
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="mt-5 mb-5">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Location</h2>
+            <p>Find us on the map in Tiruppur, Tamil Nadu</p>
+        </div>
+
+        <div style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 500px;">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border:0" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.567548857903!2d77.35898332346897!3d11.408915845696893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4fbd8d2e6c1e5%3A0x12345678901234!2sAngeripalayam%20Road%2C%20Tiruppur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <p style="color: var(--secondary-color); margin-bottom: 1rem;">
+                <strong>Abinaya Garment Shop</strong><br>
+                8/76, Angeripalayam Road, Tiruppur, Tamil Nadu, India
+            </p>
+            <a href="https://maps.google.com/maps?q=8/76+Angeripalayam+Road,+Tiruppur,+Tamil+Nadu" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-directions"></i> Get Directions
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Information Section -->
+<section class="bg-light-accent mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 text-center">
+                <div class="feature-icon mx-auto mb-3">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h5 style="color: var(--primary-color);">Quick Response</h5>
+                <p style="color: var(--secondary-color);">We respond to inquiries within 24 hours during business days.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <div class="feature-icon mx-auto mb-3">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h5 style="color: var(--primary-color);">Consultation</h5>
+                <p style="color: var(--secondary-color);">Our team provides personalized consultation for your bulk order needs.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <div class="feature-icon mx-auto mb-3">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h5 style="color: var(--primary-color);">Expert Support</h5>
+                <p style="color: var(--secondary-color);">Get expert guidance on products, pricing, and customization options.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Frequently Asked Section -->
+<section class="container mt-5 mb-5">
+    <div class="section-title">
+        <h2>Quick Answers</h2>
+        <p>Common questions about ordering from us</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">How do I place a bulk order?</h6>
+            <p style="color: var(--secondary-color); margin-bottom: 1.5rem;">
+                Simply fill out the inquiry form or contact us via WhatsApp/phone with your requirements. Our team will provide you with a quotation and help you through the ordering process.
+            </p>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is the minimum order quantity?</h6>
+            <p style="color: var(--secondary-color); margin-bottom: 1.5rem;">
+                To discuss your specific requirements and MOQ details, please contact us directly. We work with businesses of all sizes.
+            </p>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">Can you customize products?</h6>
+            <p style="color: var(--secondary-color); margin-bottom: 1.5rem;">
+                Yes! We offer customization options including custom printing, branding, and designs. Inquire about our customization services.
+            </p>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <h6 style="color: var(--primary-color); margin-bottom: 0.5rem;">What payment methods do you accept?</h6>
+            <p style="color: var(--secondary-color); margin-bottom: 1.5rem;">
+                We offer flexible payment terms for wholesale orders. Contact us to discuss payment options that work for your business.
+            </p>
+        </div>
+    </div>
+</section>
